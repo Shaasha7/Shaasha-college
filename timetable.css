@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f2f2f2;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    padding:50px 0;
+}
+
+/* Top Boxes */
+
+.timetable-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    border:1px solid #d0d0d0;
+    background:white;
+}
+
+.box{
+    padding:40px;
+    border:1px solid #d0d0d0;
+    text-decoration:none;
+    color:#111;
+    font-size:28px;
+    display:flex;
+    align-items:center;
+    gap:20px;
+    transition:.3s;
+}
+
+.box:hover{
+    background:#fafafa;
+}
+
+.icon{
+    font-size:42px;
+    color:#ff3b30;
+}
+
+/* Previous Section */
+
+.previous-section{
+    text-align:center;
+    margin-top:80px;
+}
+
+.previous-section h1{
+    font-size:55px;
+    font-weight:300;
+    color:#111;
+}
+
+.underline{
+    width:150px;
+    height:4px;
+    background:#ea6b63;
+    margin:15px auto 50px;
+}
+
+.btn{
+    display:inline-block;
+    background:#f52c1f;
+    color:white;
+    text-decoration:none;
+    padding:22px 45px;
+    font-size:22px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#d9261a;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.container{
+    width:95%;
+}
+
+.timetable-grid{
+    grid-template-columns:1fr;
+}
+
+.box{
+    font-size:18px;
+    padding:25px;
+}
+
+.icon{
+    font-size:32px;
+}
+
+.previous-section h1{
+    font-size:38px;
+}
+
+.btn{
+    font-size:18px;
+    padding:18px 30px;
+}
+}

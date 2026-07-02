@@ -1,0 +1,166 @@
+/*=============================
+NAAC PAGE
+=============================*/
+
+.naac-banner{
+
+    background:#071B3A;
+    color:#fff;
+    text-align:center;
+    padding:80px 20px;
+
+}
+
+.naac-banner h1{
+
+    font-size:52px;
+    margin-bottom:10px;
+
+}
+
+.naac-banner p{
+
+    color:#D4AF37;
+    font-size:18px;
+
+}
+
+/*============================*/
+
+.about-naac{
+
+    width:90%;
+    max-width:1200px;
+    margin:60px auto;
+    text-align:center;
+
+}
+
+.about-naac h2{
+
+    color:#071B3A;
+    font-size:38px;
+    margin-bottom:25px;
+
+}
+
+.about-naac p{
+
+    font-size:18px;
+    line-height:1.9;
+    color:#555;
+
+}
+
+/*============================*/
+
+.naac-table-section{
+
+    width:90%;
+    max-width:1200px;
+    margin:70px auto;
+
+}
+
+.naac-table-section h2{
+
+    text-align:center;
+    color:#071B3A;
+    margin-bottom:40px;
+    font-size:38px;
+
+}
+
+.table-container{
+
+    overflow-x:auto;
+
+}
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+thead{
+
+    background:#ffffff;
+
+}
+
+thead th{
+
+    padding:20px;
+    color:#071B3A;
+    font-size:18px;
+    border-bottom:3px solid #D4AF37;
+
+}
+
+tbody td{
+
+    text-align:center;
+    padding:20px;
+    border-bottom:1px solid #ddd;
+    font-size:17px;
+
+}
+
+tbody tr:hover{
+
+    background:#faf7ef;
+
+}
+
+/*============================*/
+
+.view-btn{
+
+    display:inline-block;
+    padding:10px 22px;
+    background:#D4AF37;
+    color:#071B3A;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:700;
+    transition:.3s;
+
+}
+
+.view-btn:hover{
+
+    background:#071B3A;
+    color:#fff;
+
+}
+
+/*============================*/
+
+@media(max-width:768px){
+
+.naac-banner h1{
+
+font-size:38px;
+
+}
+
+.about-naac h2,
+.naac-table-section h2{
+
+font-size:30px;
+
+}
+
+thead th,
+tbody td{
+
+padding:15px;
+font-size:15px;
+
+}
+
+}

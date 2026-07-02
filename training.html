@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Services</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="training.css">
+        <link rel="stylesheet" href="footer.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<section class="training-section">
+
+    <h1>Career Services Offered</h1>
+    <div class="line"></div>
+
+    <div class="training-grid">
+
+        <div class="training-card">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Technical Training</h3>
+            <p>
+                Intensive technical training programs are conducted to strengthen
+                coding and problem-solving skills.
+            </p>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="training-card">
+            <i class="fas fa-user-tie"></i>
+            <h3>Placement Training</h3>
+            <p>
+                Aptitude, reasoning and interview preparation sessions help
+                students achieve successful placements.
+            </p>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="training-card">
+            <i class="fas fa-handshake"></i>
+            <h3>Corporate Relations</h3>
+            <p>
+                Strong industry collaborations provide students with excellent
+                career opportunities and exposure.
+            </p>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="training-card">
+            <i class="fas fa-comments"></i>
+            <h3>Communication Skills</h3>
+            <p>
+                Communication and personality development programs make students
+                industry-ready.
+            </p>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="training-card">
+            <i class="fas fa-users"></i>
+            <h3>Soft Skills Training</h3>
+            <p>
+                Students receive training in leadership, teamwork and
+                professional ethics.
+            </p>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="training-card">
+            <i class="fas fa-globe"></i>
+            <h3>Foreign Language Training</h3>
+            <p>
+                Specialized foreign language programs help students explore
+                global opportunities.
+            </p>
+            <a href="#">Read More</a>
+        </div>
+
+    </div>
+
+</section>
+<script>
+fetch("header.html")
+.then(response => response.text())
+.then(data => {
+    document.getElementById("header").innerHTML = data;
+});
+</script>
+<div id="footer"></div>
+<script src="include.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

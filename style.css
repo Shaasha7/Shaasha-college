@@ -1,0 +1,1197 @@
+/* ==========================================
+   SHAASHA COLLEGE OF TECHNOLOGY
+   PREMIUM STYLE CSS
+   PART 1
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+    background:#f8f9fb;
+    color:#222;
+    overflow-x:hidden;
+    line-height:1.6;
+}
+
+/*==========================
+TOP BAR
+===========================*/
+
+.top-bar{
+    background:#D4AF37;
+    color:#071B3A;
+    text-align:center;
+    padding:10px 20px;
+    font-size:15px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+/*==========================
+HEADER
+===========================*/
+
+header{
+    width:100%;
+    background:#ffffff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 60px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+/*==========================
+LOGO
+===========================*/
+
+.logo-section{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.college-logo{
+    width:70px;
+    height:70px;
+    object-fit:contain;
+    display:block;
+}
+
+.college-info h1{
+    color:#071B3A;
+    font-size:28px;
+    font-weight:800;
+    line-height:1.2;
+}
+
+.college-info p{
+    margin-top:4px;
+    color:#C99A2E;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+/*==========================
+NAVIGATION
+===========================*/
+
+nav{
+    margin-left:auto;
+}
+
+.menu{
+    display:flex;
+    align-items:center;
+    gap:35px;
+    list-style:none;
+}
+
+.menu li{
+    position:relative;
+}
+
+.menu li a{
+    text-decoration:none;
+    color:#071B3A;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+    position:relative;
+}
+
+.menu li a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    width:0;
+    height:3px;
+    background:#D4AF37;
+    transition:.35s;
+}
+
+.menu li a:hover{
+    color:#D4AF37;
+}
+
+.menu li a:hover::after{
+    width:100%;
+}
+
+/*==========================
+DROPDOWN
+===========================*/
+
+.dropdown{
+    position:absolute;
+    top:100%;
+    left:0;
+    min-width:280px;
+    background:#ffffff;
+    list-style:none;
+    border-radius:12px;
+    overflow:hidden;
+    display:none;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+    z-index:1000;
+}
+
+.menu li:hover > .dropdown{
+    display:block;
+}
+
+.dropdown li a{
+    display:block;
+    padding:14px 20px;
+    color:#071B3A;
+    font-size:16px;
+    font-weight:600;
+}
+
+.dropdown li a:hover{
+    background:#D4AF37;
+    color:#071B3A;
+}
+
+/*==========================
+SECOND MENU
+===========================*/
+
+.sub-menu{
+    background:#ffffff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:45px;
+    padding:18px;
+    border-top:1px solid #eee;
+    border-bottom:1px solid #eee;
+    box-shadow:0 3px 10px rgba(0,0,0,.05);
+}
+
+.sub-menu a{
+    text-decoration:none;
+    color:#071B3A;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.sub-menu a:hover{
+    color:#D4AF37;
+}
+
+.dropdown-container{
+    position:relative;
+}
+
+.dropdown-container:hover .dropdown{
+    display:block;
+}
+/* ==========================================
+   SHAASHA COLLEGE OF TECHNOLOGY
+   PREMIUM STYLE CSS
+   PART 2
+========================================== */
+
+/*==========================
+HERO SECTION
+===========================*/
+
+.hero{
+
+    width:100%;
+    height:100vh;
+
+    background:
+    linear-gradient(rgba(6,27,58,.55),rgba(6,27,58,.55)),
+    url("images/hero-bg.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    display:flex;
+
+    align-items:center;
+
+}
+.hero-content{
+
+    width:85%;
+
+    margin:auto;
+
+    color:#fff;
+
+}
+
+.hero-content h4{
+
+    color:#f4b400;
+
+    font-size:34px;
+
+    letter-spacing:3px;
+
+}
+
+.hero-content h1{
+
+    font-size:90px;
+
+    font-weight:800;
+
+    line-height:95px;
+
+    margin:20px 0;
+
+}
+
+.hero-content p{
+
+    font-size:32px;
+
+    color:#f5f5f5;
+
+    margin-bottom:40px;
+
+}
+
+.btn{
+
+    display:inline-block;
+
+    background:#f4b400;
+
+    color:#061b3a;
+
+    text-decoration:none;
+
+    padding:18px 50px;
+
+    border-radius:50px;
+
+    font-size:22px;
+
+    font-weight:700;
+
+}
+
+.overlay{
+    height:100%;
+    max-width:1400px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:0 80px;
+    color:#fff;
+}
+
+.overlay h4{
+    color:#D4AF37;
+    font-size:24px;
+    letter-spacing:3px;
+    margin-bottom:15px;
+    text-transform:uppercase;
+}
+
+.overlay h1{
+    font-size:70px;
+    font-weight:800;
+    line-height:1.1;
+    max-width:850px;
+    margin-bottom:20px;
+}
+
+.overlay h2{
+    font-size:28px;
+    font-weight:300;
+    max-width:700px;
+    line-height:1.6;
+    margin-bottom:40px;
+}
+
+/*==========================
+BUTTONS
+===========================*/
+
+.overlay button{
+    width:220px;
+    padding:16px;
+    border:none;
+    border-radius:40px;
+    background:#D4AF37;
+    color:#071B3A;
+    font-size:18px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.35s;
+    box-shadow:0 10px 25px rgba(212,175,55,.35);
+}
+
+.overlay button:hover{
+    background:#c89a2e;
+    transform:translateY(-4px);
+}
+
+/*==========================
+COMMON SECTION
+===========================*/
+
+section{
+    padding:80px 8%;
+}
+
+section h1{
+    font-size:46px;
+    color:#071B3A;
+    text-align:center;
+    margin-bottom:15px;
+    font-weight:800;
+}
+
+section h2{
+    text-align:center;
+    color:#777;
+    font-size:18px;
+    font-weight:400;
+    margin-bottom:50px;
+}
+
+/*==========================
+INSTITUTION SECTION
+===========================*/
+
+.institution-section{
+    background:#F8F9FB;
+}
+
+.accomplishment-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+/*==========================
+CARDS
+===========================*/
+
+.achievement-card{
+    background:#fff;
+    border-radius:20px;
+    padding:35px 25px;
+    text-align:center;
+    transition:.35s;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    border:1px solid rgba(0,0,0,.04);
+}
+
+.achievement-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+}
+
+.achievement-card img{
+    width:100px;
+    height:100px;
+    object-fit:contain;
+    margin-bottom:25px;
+}
+
+.achievement-card h3{
+    color:#071B3A;
+    font-size:22px;
+    margin-bottom:15px;
+    font-weight:700;
+}
+
+.achievement-card p{
+    color:#666;
+    font-size:16px;
+    line-height:1.7;
+}
+
+/*==========================
+COMMON BUTTON
+===========================*/
+
+.btn{
+    display:inline-block;
+    background:#D4AF37;
+    color:#071B3A;
+    text-decoration:none;
+    padding:14px 30px;
+    border-radius:35px;
+    font-weight:700;
+    transition:.35s;
+}
+
+.btn:hover{
+    background:#c89a2e;
+    transform:translateY(-3px);
+}
+
+/*==========================
+IMAGE EFFECTS
+===========================*/
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+.card-image{
+    overflow:hidden;
+    border-radius:16px;
+}
+
+.card-image img{
+    transition:.4s;
+}
+
+.card-image:hover img{
+    transform:scale(1.08);
+}
+/* ==========================================
+   PROFESSIONAL ASSOCIATIONS
+========================================== */
+
+.association-section{
+    padding:80px 8%;
+    background:#f6f8fb;
+}
+
+.association-section h1{
+    text-align:center;
+    font-size:42px;
+    color:#071B3A;
+    margin-bottom:15px;
+}
+
+.title-line{
+    width:90px;
+    height:4px;
+    background:#D4AF37;
+    margin:0 auto 50px;
+    border-radius:50px;
+}
+
+.table-container{
+    background:#fff;
+    border-radius:12px;
+    overflow-x:auto;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+thead{
+    background:#071B3A;
+    color:#fff;
+}
+
+th,td{
+    padding:18px;
+    border:1px solid #ddd;
+}
+
+tbody tr:nth-child(even){
+    background:#f9f9f9;
+}
+
+tbody tr:hover{
+    background:#fff7df;
+}
+/* Floating Buttons */
+
+.floating-buttons{
+    position:fixed;
+    right:25px;
+    bottom:30px;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    z-index:9999;
+}
+
+.float-btn{
+    width:72px;
+    height:72px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    position:relative;
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+    transition:.3s;
+}
+
+.float-btn:hover{
+    transform:scale(1.08);
+}
+
+/* WhatsApp */
+
+.whatsapp{
+    background:#25D366;
+    color:#fff;
+}
+
+.whatsapp i{
+    font-size:40px;
+}
+
+/* Chatbot */
+
+.chatbot{
+    background:#E9B63A;
+    color:#071B3A;
+}
+
+.chatbot i{
+    font-size:34px;
+}
+
+/* Online Dot */
+
+.status-dot{
+    position:absolute;
+    width:14px;
+    height:14px;
+    background:#49d15d;
+    border:3px solid #fff;
+    border-radius:50%;
+    bottom:10px;
+    right:10px;
+}
+/*=============================
+    TOP RECRUITERS
+=============================*/
+
+.top-recruiters{
+    width:95%;
+    margin:80px auto;
+    background:#fff;
+    border:1px solid #ead7a2;
+    border-radius:35px;
+    padding:60px 40px;
+}
+
+.recruiters-header{
+    text-align:center;
+}
+
+.placement-badge{
+    display:inline-block;
+    padding:10px 28px;
+    background:#fdf5e5;
+    color:#d8a315;
+    border-radius:40px;
+    font-size:14px;
+    letter-spacing:2px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.recruiters-header h2{
+    font-size:64px;
+    margin-bottom:60px;
+    font-family:Georgia,serif;
+}
+
+.recruitters-header h2,
+.recruiters-header h2 span{
+    line-height:1;
+}
+
+.dark{
+    color:#1d2035;
+}
+
+.gold{
+    color:#d8a315;
+}
+
+.recruiters-grid{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:25px;
+    margin-bottom:60px;
+}
+
+.recruiter-card{
+    height:110px;
+    border:1px solid #ead7a2;
+    border-radius:22px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:.35s;
+    background:#fff;
+}
+
+.recruiter-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,.12);
+}
+
+.recruiter-card img{
+    width:150px;
+    max-width:80%;
+    max-height:70px;
+    object-fit:contain;
+}
+
+.placement-stats{
+    display:flex;
+    justify-content:center;
+    gap:90px;
+    text-align:center;
+}
+
+.stat-box h3{
+    font-size:60px;
+    color:#d8a315;
+    font-weight:700;
+}
+
+.stat-box p{
+    font-size:28px;
+    color:#354b6d;
+    margin-top:8px;
+}
+
+@media(max-width:1200px){
+
+.recruiters-grid{
+grid-template-columns:repeat(3,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.top-recruiters{
+padding:40px 20px;
+}
+
+.recruiters-header h2{
+font-size:42px;
+}
+
+.recruiters-grid{
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+}
+
+.recruiter-card{
+height:90px;
+}
+
+.placement-stats{
+flex-direction:column;
+gap:30px;
+}
+
+.stat-box h3{
+font-size:42px;
+}
+
+.stat-box p{
+font-size:22px;
+}
+
+}
+
+@media(max-width:480px){
+
+.recruiters-grid{
+grid-template-columns:1fr;
+}
+
+}
+/*=============================
+      SHAASHA NEWS
+==============================*/
+
+.shaasha-news{
+    width:95%;
+    margin:90px auto;
+}
+
+.news-header{
+    text-align:center;
+}
+
+.news-badge{
+    display:inline-block;
+    padding:12px 28px;
+    background:#fdf4e1;
+    color:#d8a315;
+    border-radius:40px;
+    font-weight:600;
+    letter-spacing:2px;
+    margin-bottom:20px;
+}
+
+.news-header h2{
+    font-size:60px;
+    font-family:Georgia,serif;
+    margin-bottom:10px;
+}
+
+.black-text{
+    color:#1d2035;
+}
+
+.gold-text{
+    color:#d8a315;
+}
+
+.heading-line{
+    width:90px;
+    height:4px;
+    background:#d8a315;
+    margin:20px auto;
+    border-radius:20px;
+}
+
+.news-header p{
+    font-size:22px;
+    color:#555;
+    margin-bottom:60px;
+}
+
+.news-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:35px;
+}
+
+.news-card{
+
+    border:1px solid #ead7a2;
+    border-radius:28px;
+    padding:35px;
+    background:#fff;
+    transition:.35s;
+}
+
+.news-card:hover{
+
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+}
+
+.category{
+
+    display:inline-block;
+    padding:10px 18px;
+    border-radius:40px;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:25px;
+
+}
+
+.purple{
+
+    background:#efe9ff;
+    color:#5d34c2;
+
+}
+
+.green{
+
+    background:#eaf8ea;
+    color:#2b8b39;
+
+}
+
+.orange{
+
+    background:#fff1e8;
+    color:#d45718;
+
+}
+
+.date{
+
+    color:#d8a315;
+    margin-bottom:18px;
+    font-size:17px;
+
+}
+
+.news-card h3{
+
+    font-size:34px;
+    color:#1d2035;
+    margin-bottom:20px;
+    line-height:1.3;
+
+}
+
+.news-card p{
+
+    font-size:20px;
+    color:#555;
+    line-height:1.8;
+    margin-bottom:30px;
+
+}
+
+.news-card a{
+
+    text-decoration:none;
+    color:#d8a315;
+    font-weight:700;
+    font-size:20px;
+
+}
+
+.news-card:hover a{
+
+    color:#1d2035;
+
+}
+
+@media(max-width:991px){
+
+.news-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.news-header h2{
+
+font-size:42px;
+
+}
+
+.news-card h3{
+
+font-size:28px;
+
+}
+
+.news-card p{
+
+font-size:18px;
+
+}
+
+}
+/*=============================
+     STUDENT TESTIMONIALS
+==============================*/
+
+.testimonials{
+    width:95%;
+    margin:90px auto;
+}
+
+.testimonial-header{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.testimonial-badge{
+
+    display:inline-block;
+    padding:12px 28px;
+    background:#fdf4e1;
+    color:#d8a315;
+    border-radius:40px;
+    letter-spacing:2px;
+    font-weight:600;
+    margin-bottom:20px;
+
+}
+
+.testimonial-header h2{
+
+    font-size:60px;
+    font-family:Georgia,serif;
+    margin-bottom:15px;
+
+}
+
+.heading-dark{
+
+    color:#1d2035;
+
+}
+
+.heading-gold{
+
+    color:#d8a315;
+
+}
+
+.testimonial-line{
+
+    width:90px;
+    height:4px;
+    background:#d8a315;
+    margin:20px auto;
+    border-radius:20px;
+
+}
+
+.testimonial-grid{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:35px;
+
+}
+
+.testimonial-card{
+
+    border:1px solid #ead7a2;
+    border-radius:30px;
+    padding:40px;
+    background:#fff;
+    transition:.35s;
+
+}
+
+.testimonial-card:hover{
+
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+}
+
+.quote-icon{
+
+    font-size:70px;
+    color:#e8ca73;
+    line-height:1;
+    margin-bottom:25px;
+
+}
+
+.testimonial-card p{
+
+    font-size:23px;
+    color:#42526b;
+    line-height:1.8;
+    font-style:italic;
+    margin-bottom:40px;
+
+}
+
+.testimonial-card h3{
+
+    color:#d8a315;
+    font-size:36px;
+    font-family:Georgia,serif;
+    margin-bottom:10px;
+
+}
+
+.testimonial-card span{
+
+    color:#5a6a85;
+    font-size:20px;
+
+}
+
+@media(max-width:992px){
+
+.testimonial-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.testimonial-header h2{
+
+font-size:42px;
+
+}
+
+.testimonial-card p{
+
+font-size:19px;
+
+}
+
+.testimonial-card h3{
+
+font-size:28px;
+
+}
+
+}
+/*==========================
+THEME TOGGLE
+===========================*/
+
+.theme-toggle{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+
+    padding:12px 24px;
+
+    margin-left:20px;
+
+    border:2px solid #D4AF37;
+    border-radius:50px;
+
+    color:#D4AF37;
+    background:#fff;
+
+    font-size:22px;
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    user-select:none;
+
+}
+
+.theme-toggle i{
+
+    font-size:18px;
+
+}
+
+.theme-toggle span{
+
+    font-size:18px;
+
+}
+
+.theme-toggle:hover{
+
+    background:#D4AF37;
+    color:#fff;
+
+    transform:translateY(-2px);
+
+}
+body.dark-mode{
+
+    background:#111827;
+    color:#ffffff;
+
+}
+
+body.dark-mode header{
+
+    background:#1b2430;
+
+}
+
+body.dark-mode .sub-menu{
+
+    background:#1b2430;
+
+}
+
+body.dark-mode .dropdown{
+
+    background:#1b2430;
+
+}
+
+body.dark-mode a{
+
+    color:#ffffff;
+
+}
+
+body.dark-mode .theme-toggle{
+
+    background:#D4AF37;
+    color:#fff;
+
+}
+/* ==========================================
+   DARK MODE
+========================================== */
+
+
+/* Header */
+
+body.dark-mode header{
+    background:#1b1b1b;
+}
+
+body.dark-mode .sub-menu{
+    background:#1b1b1b;
+}
+
+body.dark-mode .dropdown{
+    background:#1b1b1b;
+}
+
+/* Text */
+
+body.dark-mode .college-info h1,
+body.dark-mode .menu li a,
+body.dark-mode .sub-menu a,
+body.dark-mode .dropdown li a{
+    color:#ffffff;
+}
+
+body.dark-mode .dropdown li a:hover{
+    background:#D4AF37;
+    color:#071B3A;
+}
+
+/* Cards */
+
+body.dark-mode .achievement-card,
+body.dark-mode .news-card,
+body.dark-mode .testimonial-card,
+body.dark-mode .top-recruiters,
+body.dark-mode .table-container{
+    background:#1e1e1e;
+    color:#ffffff;
+}
+
+/* Headings */
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4{
+    color:#ffffff;
+}
+
+body.dark-mode p{
+    color:#d0d0d0;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAAC Accreditation | Shaasha College of Technology</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="naac.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+
+<div id="header"></div>
+
+<!-- Banner -->
+
+<section class="naac-banner">
+
+    <div class="banner-content">
+
+        <h1>NAAC Accreditation</h1>
+
+        <p>Home / Accreditations / NAAC</p>
+
+    </div>
+
+</section>
+
+<!-- About -->
+
+<section class="about-naac">
+
+    <h2>About NAAC</h2>
+
+    <p>
+        The National Assessment and Accreditation Council (NAAC) is an autonomous institution
+        established by the University Grants Commission (UGC) to assess and accredit Higher
+        Educational Institutions in India. Shaasha College of Technology is committed to
+        maintaining excellence in teaching, research, innovation, governance and student support.
+    </p>
+
+</section>
+
+<!-- Accreditation Table -->
+
+<section class="naac-table-section">
+
+    <h2>NAAC Accreditation Details</h2>
+
+    <div class="table-container">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Cycle No</th>
+                    <th>Assessment Date</th>
+                    <th>Grade</th>
+                    <th>Score</th>
+                    <th>EC No</th>
+                    <th>Certificate</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>2</td>
+                    <td>20.09.2021</td>
+                    <td>A</td>
+                    <td>3.03</td>
+                    <td>EC(SC-74)</td>
+
+                    <td>
+                        <a href="#" class="view-btn">
+                            View
+                        </a>
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>1</td>
+                    <td>03.03.2015</td>
+                    <td>A</td>
+                    <td>3.22</td>
+                    <td>SC005</td>
+
+                    <td>
+                        <a href="#" class="view-btn">
+                            View
+                        </a>
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<script>
+
+fetch("header.html")
+.then(response => response.text())
+.then(data => {
+
+document.getElementById("header").innerHTML = data;
+
+});
+
+</script>
+<div id="footer"></div>
+<script src="include.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

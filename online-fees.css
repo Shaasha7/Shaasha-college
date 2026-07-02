@@ -1,0 +1,92 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#ffffff;
+}
+
+.fees-section{
+    width:90%;
+    max-width:1100px;
+    margin:40px auto;
+}
+
+.fees-section h1{
+    text-align:center;
+    font-size:48px;
+    font-weight:300;
+    color:#222;
+}
+
+.title-line{
+    width:150px;
+    height:4px;
+    background:#e74c3c;
+    margin:12px auto 50px;
+    border-radius:10px;
+}
+
+.fees-container{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+}
+
+.fee-card{
+    height:170px;
+    border:1px solid #d6d6d6;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    color:#111;
+    background:#fff;
+    transition:.35s;
+}
+
+.fee-card h2{
+    font-size:28px;
+    font-weight:400;
+}
+
+.fee-card:hover{
+    background:#003366;
+    color:#fff;
+    transform:translateY(-6px);
+    box-shadow:0 12px 25px rgba(0,0,0,.15);
+}
+
+.center-card{
+    width:50%;
+    margin:0 auto;
+    grid-column:1 / span 2;
+}
+
+@media(max-width:768px){
+
+.fees-container{
+    grid-template-columns:1fr;
+}
+
+.center-card{
+    width:100%;
+    grid-column:auto;
+}
+
+.fees-section h1{
+    font-size:36px;
+}
+
+.fee-card{
+    height:150px;
+}
+
+.fee-card h2{
+    font-size:24px;
+}
+
+}

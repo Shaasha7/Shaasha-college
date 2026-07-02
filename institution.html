@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Institution - Shaasha College of Technology</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="institution.css">
+<link rel="stylesheet" href="footer.css">
+
+</head>
+
+<body>
+<div id="header"></div>
+<section class="institution-section">
+
+    <h1>Institute Accomplishments</h1>
+
+    <div class="accomplishment-grid">
+
+        <div class="achievement-card">
+            <img src="images/nba.png" alt="NBA Accredited">
+            <h3>NBA Accredited</h3>
+        </div>
+
+        <div class="achievement-card">
+            <img src="images/naac.png" alt="NAAC A Grade">
+            <h3>Accredited by NAAC with 'A' Grade</h3>
+        </div>
+
+        <div class="achievement-card">
+            <img src="images/nirf.jpg" alt="NIRF Ranking">
+            <h3>NIRF Ranking</h3>
+        </div>
+
+        <div class="achievement-card">
+            <img src="images/aicte.jpg" alt="AICTE Approval">
+            <h3>AICTE Extended Approval</h3>
+        </div>
+
+        <div class="achievement-card">
+            <img src="images/iic.png" alt="Institution Innovation Council">
+            <h3>Institution Innovation Council</h3>
+        </div>
+
+        <div class="achievement-card">
+            <img src="images/ugc.png" alt="UGC Approval">
+            <h3>Approved Under UGC 2F & 12B</h3>
+        </div>
+
+        <div class="achievement-card">
+            <img src="images/aa-category.png" alt="AA Category">
+            <h3>Ranked Under AA Category</h3>
+        </div>
+
+        <div class="achievement-card">
+            <img src="images/excellence-award.png" alt="Excellence Award">
+            <h3>Academic Partner Excellence Award</h3>
+        </div>
+
+        <div class="achievement-card">
+            <img src="images/hackathon.jpeg" alt="Hackathon Winners">
+            <h3>National & International Hackathon Winners</h3>
+        </div>
+
+        <div class="achievement-card">
+            <img src="images/pmkvy.jpg" alt="PMKVY">
+            <h3>PMKVY Skill Development Programme</h3>
+        </div>
+
+        <div class="achievement-card">
+            <img src="images/iirs-isro.png" alt="IIRS ISRO">
+            <h3>IIRS/ISRO Network Institute</h3>
+        </div>
+
+        <div class="achievement-card">
+            <img src="images/iitb.png" alt="IIT Bombay">
+            <h3>IIT Bombay Remote and Nodal Centre</h3>
+        </div>
+
+        <div class="achievement-card">
+            <img src="images/ncsss.jpg" alt="National Cyber Safety">
+            <h3>Accredited by National Cyber Safety and Security Standards</h3>
+        </div>
+        <div class="achievement-card">
+            <img src="images/nptel.jpg" alt="NPTEL">
+            <h3>NPTEL Active Learning Centre</h3>
+        </div>
+<div class="achievement-card">
+            <img src="images/ai.png" alt="Recognising Centre">
+            <h3>Centre for Artificial Intelligence & Machine Learning</h3>
+        </div>
+    </div>
+
+</section>
+<script>
+fetch("header.html")
+.then(response => response.text())
+.then(data => {
+    document.getElementById("header").innerHTML = data;
+});
+</script>
+<div id="footer"></div>
+<script src="include.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

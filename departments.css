@@ -1,0 +1,210 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:#f8fafc;
+    color:#222;
+}
+
+.container{
+
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+}
+
+.department-page{
+
+    padding:80px 0;
+}
+
+/* Heading */
+
+.page-title{
+
+    text-align:center;
+    font-size:48px;
+    font-weight:700;
+    color:#0f172a;
+}
+
+.page-subtitle{
+
+    text-align:center;
+    margin-top:15px;
+    color:#64748b;
+    font-size:18px;
+    margin-bottom:70px;
+}
+
+/* Section */
+
+.section-title{
+
+    text-align:center;
+    margin:70px 0 45px;
+}
+
+.section-title h2{
+
+    display:inline-block;
+    font-size:40px;
+    color:#0f172a;
+    position:relative;
+    font-weight:600;
+}
+
+.section-title h2::after{
+
+    content:'';
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    bottom:-12px;
+
+    width:90px;
+    height:4px;
+    border-radius:20px;
+
+    background:#ff4d4d;
+}
+
+/* Grid */
+
+.department-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+    gap:28px;
+}
+
+/* Card */
+
+.department-card{
+
+    background:white;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:15px;
+
+    padding:28px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    min-height:120px;
+
+    transition:.35s;
+    cursor:pointer;
+}
+
+.department-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#ff4d4d;
+
+    box-shadow:0 20px 35px rgba(0,0,0,.08);
+}
+
+.department-card i{
+
+    width:70px;
+    height:70px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+
+    background:#fff5f5;
+
+    color:#ff3b30;
+
+    font-size:30px;
+
+    transition:.3s;
+}
+
+.department-card:hover i{
+
+    background:#ff3b30;
+    color:white;
+    transform:rotate(-10deg);
+}
+
+.department-card span{
+
+    font-size:20px;
+    line-height:1.6;
+    font-weight:500;
+    color:#1f2937;
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.page-title{
+
+font-size:40px;
+
+}
+
+.section-title h2{
+
+font-size:34px;
+
+}
+
+.department-grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.department-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.page-title{
+
+font-size:34px;
+
+}
+
+.page-subtitle{
+
+font-size:16px;
+
+}
+
+.department-card{
+
+padding:24px;
+
+}
+
+.department-card span{
+
+font-size:18px;
+
+}
+
+}

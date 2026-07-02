@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Core Values</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="corevalues.css">
+<link rel="stylesheet" href="footer.css">
+</head>
+<body>
+
+<section class="core-values">
+
+    <div class="value-box">
+        <i class="fa-solid fa-layer-group"></i>
+        <h2>Evolve and Adapt</h2>
+
+        <p class="content">
+            The people who work here are smart, dedicated and committed with core values.
+            We believe our nation's future depends on effective use of talent and resources
+            represented by the diversity of our people and ideas.
+        </p>
+
+        <a href="#" class="toggle-btn">Read More</a>
+    </div>
+
+
+    <div class="value-box">
+        <i class="fa-solid fa-diagram-project"></i>
+        <h2>Team on a Mission</h2>
+
+        <p class="content">
+            Teamwork means being able to set personal preferences aside while focusing on the greater good.
+            The creation of something out of nothing is one of the most important aspects of teamwork.
+        </p>
+
+        <a href="#" class="toggle-btn">Read More</a>
+    </div>
+
+
+    <div class="value-box">
+        <i class="fa-solid fa-user-graduate"></i>
+        <h2>Challenge and Collaborate</h2>
+
+        <p class="content">
+            To innovate, our team is our toughest critics and biggest supporters.
+            Students are endowed with limitless abilities and opportunities to exhibit their talents.
+        </p>
+
+        <a href="#" class="toggle-btn">Read More</a>
+    </div>
+
+
+    <div class="value-box">
+        <i class="fa-solid fa-trophy"></i>
+        <h2>Work Ethic Wins</h2>
+
+        <p class="content">
+            We believe teams willing to put in extra effort, go the extra mile and are accountable
+            for their actions will realize their vision and dreams.
+        </p>
+
+        <a href="#" class="toggle-btn">Read More</a>
+    </div>
+
+
+    <div class="value-box">
+        <i class="fa-regular fa-star"></i>
+        <h2>Be Pioneers</h2>
+
+        <p class="content">
+            We innovate and push for boundless creativity through curiosity.
+            Sustainable development goals require action on multiple fronts.
+        </p>
+
+        <a href="#" class="toggle-btn">Read More</a>
+    </div>
+
+
+    <div class="value-box">
+        <i class="fa-solid fa-seedling"></i>
+        <h2>Act with Integrity</h2>
+
+        <p class="content">
+            We adopt truthfulness, honesty, fairness and transparency in academic,
+            administrative and professional activities.
+        </p>
+
+        <a href="#" class="toggle-btn">Read More</a>
+    </div>
+
+
+    <div class="value-box">
+        <i class="fa-solid fa-life-ring"></i>
+        <h2>Autonomy and Attitude</h2>
+
+        <p class="content">
+            We are a team of self-starters who take pride in our work.
+            We provide freedom to explore, collaborate and challenge oneself.
+        </p>
+
+        <a href="#" class="toggle-btn">Read More</a>
+    </div>
+
+
+    <div class="value-box">
+        <i class="fa-brands fa-connectdevelop"></i>
+        <h2>Authenticity</h2>
+
+        <p class="content">
+            We encourage students to be themselves and embrace unique contributions.
+            Everyone is expected to acknowledge responsibilities and learn from mistakes.
+        </p>
+
+        <a href="#" class="toggle-btn">Read More</a>
+    </div>
+
+
+    <div class="value-box">
+        <i class="fa-solid fa-arrow-trend-up"></i>
+        <h2>Community Development</h2>
+
+        <p class="content">
+            We serve the local community through training and development initiatives.
+            This service benefits society and gives students exposure to community engagement.
+        </p>
+
+        <a href="#" class="toggle-btn">Read More</a>
+    </div>
+
+</section>
+
+
+<script>
+
+const buttons = document.querySelectorAll(".toggle-btn");
+
+buttons.forEach(button => {
+
+    button.addEventListener("click", function(e){
+
+        e.preventDefault();
+
+        const text = this.previousElementSibling;
+
+        text.classList.toggle("show");
+
+        if(text.classList.contains("show")){
+            this.innerHTML = "Read Less";
+        }
+        else{
+            this.innerHTML = "Read More";
+        }
+
+    });
+
+});
+
+</script>
+<div id="footer"></div>
+<script src="include.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

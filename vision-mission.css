@@ -1,0 +1,70 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+.vision-mission{
+    width:85%;
+    margin:60px auto;
+    display:flex;
+}
+
+.vision-box{
+    width:45%;
+    background:#19255c;
+    color:white;
+    padding:40px;
+}
+
+.mission-box{
+    width:55%;
+    background:#0077c8;
+    color:white;
+    padding:40px;
+}
+
+.vision-box h1,
+.mission-box h1{
+    font-size:50px;
+    font-weight:300;
+    margin-bottom:25px;
+}
+
+.vision-box p,
+.mission-box p{
+    font-size:22px;
+    line-height:1.8;
+}
+
+.mission-box p{
+    margin-bottom:30px;
+}
+
+@media(max-width:768px){
+
+.vision-mission{
+    flex-direction:column;
+    width:95%;
+}
+
+.vision-box,
+.mission-box{
+    width:100%;
+}
+
+.vision-box h1,
+.mission-box h1{
+    font-size:38px;
+}
+
+.vision-box p,
+.mission-box p{
+    font-size:18px;
+}
+}

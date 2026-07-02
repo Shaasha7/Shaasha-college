@@ -1,0 +1,434 @@
+/*==============================
+        GOOGLE FONT
+===============================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/*==============================
+        FOOTER
+===============================*/
+
+.footer{
+    width:100%;
+    background:#061b3a;
+    color:#ffffff;
+    margin-top:80px;
+}
+
+.footer-container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1fr 1.5fr;
+    gap:45px;
+    padding:70px 0 50px;
+}
+
+/*==============================
+        LOGO SECTION
+===============================*/
+
+.footer-about .footer-logo{
+    width:90px;
+    margin-bottom:15px;
+}
+
+.footer-about h2{
+    color:#f4b400;
+    font-size:28px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+.footer-about h4{
+    margin-top:5px;
+    color:#ffffff;
+    font-size:16px;
+    font-weight:500;
+    line-height:28px;
+}
+
+.footer-about p{
+    margin-top:20px;
+    color:#d6d6d6;
+    line-height:30px;
+    text-align:justify;
+    font-size:15px;
+}
+
+/*==============================
+        COLUMN
+===============================*/
+
+.footer-column h3{
+    color:#f4b400;
+    margin-bottom:22px;
+    font-size:22px;
+    position:relative;
+}
+
+.footer-column h3::after{
+
+    content:'';
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:55px;
+
+    height:3px;
+
+    background:#f4b400;
+
+    border-radius:20px;
+
+}
+
+.footer-column ul{
+
+    list-style:none;
+
+}
+
+.footer-column ul li{
+
+    margin-bottom:15px;
+
+}
+
+.footer-column ul li a{
+
+    color:#d8d8d8;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+    font-size:15px;
+
+}
+
+.footer-column ul li a:hover{
+
+    color:#f4b400;
+
+    padding-left:8px;
+
+}
+/*==============================
+        CONTACT SECTION
+===============================*/
+
+.footer-column p{
+    color:#d8d8d8;
+    font-size:15px;
+    line-height:28px;
+    margin-bottom:18px;
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+}
+
+.footer-column p i{
+    color:#f4b400;
+    font-size:18px;
+    margin-top:5px;
+    min-width:20px;
+}
+
+/*==============================
+        ACCREDITATION
+===============================*/
+
+.footer-column ul li{
+    color:#d8d8d8;
+    font-size:15px;
+    line-height:28px;
+}
+
+/*==============================
+        SOCIAL ICONS
+===============================*/
+
+.social-icons{
+    display:flex;
+    gap:15px;
+    margin-top:25px;
+}
+
+.social-icons a{
+
+    width:45px;
+
+    height:45px;
+
+    background:#ffffff;
+
+    color:#061b3a;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    transition:0.35s ease;
+
+}
+
+.social-icons a:hover{
+
+    background:#f4b400;
+
+    color:#061b3a;
+
+    transform:translateY(-6px);
+
+    box-shadow:0 8px 20px rgba(244,180,0,.35);
+
+}
+
+/*==============================
+        BOTTOM FOOTER
+===============================*/
+
+.footer-bottom{
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+    padding:22px 8%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+.footer-bottom p{
+
+    color:#d0d0d0;
+
+    font-size:14px;
+
+}
+
+.footer-bottom span{
+
+    color:#f4b400;
+
+    font-weight:600;
+
+}
+/*==============================
+      HOVER ANIMATIONS
+===============================*/
+
+.footer-column ul li a,
+.social-icons a,
+.footer-logo{
+    transition:all 0.35s ease;
+}
+
+.footer-logo:hover{
+    transform:scale(1.05);
+}
+
+.footer-column ul li:hover{
+    transform:translateX(5px);
+    transition:0.3s;
+}
+
+/*==============================
+      SCROLL ANIMATION
+===============================*/
+
+.footer{
+    animation:footerFade 0.8s ease;
+}
+
+@keyframes footerFade{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/*==============================
+      TABLET VIEW
+===============================*/
+
+@media(max-width:1100px){
+
+.footer-container{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:40px;
+
+}
+
+.footer-about{
+
+grid-column:span 2;
+
+}
+
+}
+
+/*==============================
+      MOBILE VIEW
+===============================*/
+
+@media(max-width:768px){
+
+.footer{
+
+text-align:center;
+
+}
+
+.footer-container{
+
+grid-template-columns:1fr;
+
+padding:60px 25px;
+
+gap:35px;
+
+}
+
+.footer-about{
+
+grid-column:auto;
+
+}
+
+.footer-about p{
+
+text-align:center;
+
+}
+
+.footer-column h3::after{
+
+left:50%;
+
+transform:translateX(-50%);
+
+}
+
+.footer-column p{
+
+justify-content:center;
+
+text-align:center;
+
+}
+
+.social-icons{
+
+justify-content:center;
+
+}
+
+.footer-bottom{
+
+flex-direction:column;
+
+text-align:center;
+
+padding:20px;
+
+}
+
+}
+
+/*==============================
+      SMALL MOBILE
+===============================*/
+
+@media(max-width:480px){
+
+.footer-about .footer-logo{
+
+width:75px;
+
+}
+
+.footer-about h2{
+
+font-size:24px;
+
+}
+
+.footer-about h4{
+
+font-size:15px;
+
+}
+
+.footer-column h3{
+
+font-size:20px;
+
+}
+
+.footer-column ul li a,
+
+.footer-column p,
+
+.footer-about p{
+
+font-size:14px;
+
+line-height:26px;
+
+}
+
+.social-icons a{
+
+width:42px;
+
+height:42px;
+
+font-size:16px;
+
+}
+
+.footer-bottom p{
+
+font-size:13px;
+
+}
+
+}

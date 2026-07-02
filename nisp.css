@@ -1,0 +1,592 @@
+/*=========================================
+        GOOGLE FONT
+=========================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/*=========================================
+        RESET
+=========================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f7f8fc;
+    color:#333;
+    line-height:1.8;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/*=========================================
+        HERO
+=========================================*/
+
+.hero{
+
+    height:340px;
+
+    background:
+    linear-gradient(rgba(8,30,75,.75),rgba(8,30,75,.75)),
+    url("../images/nisp-banner.jpg") center/cover no-repeat;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.overlay{
+
+    color:#fff;
+
+}
+
+.overlay h1{
+
+    font-size:48px;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+}
+
+.overlay p{
+
+    font-size:20px;
+
+    letter-spacing:1px;
+
+}
+
+/*=========================================
+        INTRODUCTION
+=========================================*/
+
+.intro{
+
+    padding:70px 8% 40px;
+
+}
+
+.intro p{
+
+    max-width:1050px;
+
+    margin:auto;
+
+    text-align:center;
+
+    font-size:18px;
+
+    line-height:2;
+
+}
+
+/*=========================================
+        SECTION TITLE
+=========================================*/
+
+.section-title{
+
+    text-align:center;
+
+    margin:60px 0 40px;
+
+}
+
+.section-title h2{
+
+    font-size:42px;
+
+    color:#0a2b66;
+
+    font-weight:500;
+
+}
+
+.section-title span{
+
+    display:block;
+
+    width:120px;
+
+    height:4px;
+
+    background:#ef5350;
+
+    margin:15px auto;
+
+    border-radius:10px;
+
+}
+
+/*=========================================
+        POLICY CARDS
+=========================================*/
+
+.policy-box{
+
+    width:90%;
+
+    margin:auto;
+
+}
+
+.policy-card{
+
+    background:#f1f3f8;
+
+    margin-bottom:18px;
+
+    padding:30px;
+
+    display:flex;
+
+    gap:20px;
+
+    align-items:flex-start;
+
+    transition:.3s;
+
+    border-left:6px solid #0a2b66;
+
+}
+
+.policy-card:hover{
+
+    background:#e9f2ff;
+
+    transform:translateY(-4px);
+
+}
+
+.dot{
+
+    width:14px;
+
+    height:14px;
+
+    background:#0a2b66;
+
+    border-radius:50%;
+
+    margin-top:10px;
+
+    flex-shrink:0;
+
+}
+
+.policy-card p{
+
+    font-size:18px;
+
+}
+
+/*=========================================
+        DOCUMENTS & EVENTS
+=========================================*/
+
+.documents,
+.events{
+
+    padding:20px 8% 60px;
+
+}
+
+.document-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+.pdf-card{
+
+    background:#fff;
+
+    border:1px solid #ddd;
+
+    padding:28px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    text-decoration:none;
+
+    color:#222;
+
+    transition:.35s;
+
+    min-height:120px;
+
+}
+
+.pdf-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+
+}
+
+.pdf-card i{
+
+    font-size:42px;
+
+    color:#ef3d2f;
+
+}
+
+.pdf-card span{
+
+    font-size:18px;
+
+    line-height:1.6;
+
+}
+/*=========================================
+        COMMITTEE TABLE
+=========================================*/
+
+.committee{
+
+    padding:40px 8% 80px;
+
+}
+
+.table-container{
+
+    overflow-x:auto;
+
+    background:#fff;
+
+    border-radius:10px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    min-width:900px;
+
+}
+
+thead{
+
+    background:#0a2b66;
+
+}
+
+thead th{
+
+    color:#fff;
+
+    padding:20px;
+
+    text-align:center;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:.5px;
+
+}
+
+tbody td{
+
+    padding:18px 20px;
+
+    border:1px solid #e5e5e5;
+
+    font-size:15px;
+
+    vertical-align:middle;
+
+}
+
+tbody tr:nth-child(even){
+
+    background:#f8f9fc;
+
+}
+
+tbody tr:hover{
+
+    background:#eef5ff;
+
+    transition:.3s;
+
+}
+
+tbody td:first-child{
+
+    text-align:center;
+
+    width:80px;
+
+    font-weight:600;
+
+}
+
+tbody td:nth-child(2){
+
+    width:250px;
+
+    font-weight:600;
+
+    color:#0a2b66;
+
+}
+
+/*=========================================
+        SCROLLBAR
+=========================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+    height:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#0a2b66;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#ececec;
+
+}
+
+/*=========================================
+        ANIMATION
+=========================================*/
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.hero,
+.intro,
+.policy-card,
+.pdf-card,
+.table-container{
+
+    animation:fadeUp .8s ease;
+
+}
+
+/*=========================================
+        RESPONSIVE
+=========================================*/
+
+@media(max-width:1200px){
+
+.document-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+
+    height:240px;
+
+}
+
+.overlay h1{
+
+    font-size:30px;
+
+}
+
+.overlay p{
+
+    font-size:16px;
+
+}
+
+.section-title h2{
+
+    font-size:30px;
+
+}
+
+.intro{
+
+    padding:50px 20px;
+
+}
+
+.intro p{
+
+    font-size:16px;
+
+    text-align:justify;
+
+}
+
+.policy-box{
+
+    width:100%;
+
+}
+
+.policy-card{
+
+    padding:20px;
+
+}
+
+.policy-card p{
+
+    font-size:16px;
+
+}
+
+.document-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.pdf-card{
+
+    min-height:auto;
+
+    padding:22px;
+
+}
+
+.pdf-card span{
+
+    font-size:16px;
+
+}
+
+.committee{
+
+    padding:50px 20px;
+
+}
+
+table{
+
+    min-width:850px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.overlay h1{
+
+    font-size:26px;
+
+}
+
+.overlay p{
+
+    font-size:15px;
+
+}
+
+.section-title h2{
+
+    font-size:24px;
+
+}
+
+.policy-card{
+
+    flex-direction:column;
+
+}
+
+.dot{
+
+    margin-bottom:10px;
+
+}
+
+.pdf-card{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.pdf-card i{
+
+    font-size:38px;
+
+}
+
+.pdf-card span{
+
+    font-size:15px;
+
+}
+
+}

@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f7f8fc;
+}
+
+/* HERO */
+
+.hero{
+
+    height:300px;
+
+    background:linear-gradient(rgba(10,43,102,.75),rgba(10,43,102,.75)),
+    url("../images/autonomous-banner.jpg") center/cover no-repeat;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.overlay{
+
+    text-align:center;
+
+    color:#fff;
+
+}
+
+.overlay h1{
+
+    font-size:46px;
+
+    margin-bottom:10px;
+
+}
+
+.overlay p{
+
+    font-size:20px;
+
+}
+
+/* SECTION */
+
+.autonomous{
+
+    padding:80px 8%;
+
+}
+
+.title{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+.title h2{
+
+    color:#0a2b66;
+
+    font-size:34px;
+
+}
+
+.line{
+
+    width:90px;
+
+    height:4px;
+
+    background:#d62828;
+
+    margin:15px auto;
+
+}
+
+/* TABLE */
+
+.table-box{
+
+    overflow-x:auto;
+
+    background:#fff;
+
+    border-radius:10px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+thead th{
+
+    padding:20px;
+
+    color:#0a2b66;
+
+    font-size:15px;
+
+    border:1px solid #ddd;
+
+    border-bottom:2px solid #d62828;
+
+    text-transform:uppercase;
+
+}
+
+tbody td{
+
+    padding:22px;
+
+    border:1px solid #e5e5e5;
+
+    text-align:center;
+
+    font-size:15px;
+
+}
+
+tbody tr:nth-child(even){
+
+    background:#fafafa;
+
+}
+
+tbody tr:hover{
+
+    background:#eef4ff;
+
+}
+
+/* BUTTON */
+
+.view-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:10px 20px;
+
+    background:#d62828;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    transition:.3s;
+
+}
+
+.view-btn:hover{
+
+    background:#0a2b66;
+
+}
+
+.view-btn i{
+
+    font-size:14px;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero{
+
+    height:220px;
+
+}
+
+.overlay h1{
+
+    font-size:30px;
+
+}
+
+.overlay p{
+
+    font-size:16px;
+
+}
+
+.autonomous{
+
+    padding:60px 20px;
+
+}
+
+table{
+
+    min-width:700px;
+
+}
+
+}

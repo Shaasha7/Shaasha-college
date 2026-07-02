@@ -1,0 +1,456 @@
+/*=========================================
+        GOOGLE FONT
+=========================================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*=========================================
+        RESET
+=========================================*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8f9fc;
+    color:#333;
+    line-height:1.8;
+}
+
+/*=========================================
+        HERO SECTION
+=========================================*/
+
+.iqac-hero{
+    height:330px;
+    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("../images/iqac-banner.jpg") center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-overlay{
+    text-align:center;
+    color:#fff;
+}
+
+.hero-overlay h1{
+    font-size:48px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.hero-overlay p{
+    font-size:20px;
+    opacity:.95;
+}
+
+/*=========================================
+        COMMON SECTION
+=========================================*/
+
+section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:34px;
+    color:#0a2b66;
+    margin-bottom:12px;
+}
+
+.underline{
+    width:90px;
+    height:4px;
+    background:#d62828;
+    margin:auto;
+    border-radius:20px;
+}
+
+/*=========================================
+        ABOUT SECTION
+=========================================*/
+
+.about-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+}
+
+.about-box{
+    background:#fff;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.about-box:hover{
+    transform:translateY(-8px);
+}
+
+.about-box p{
+    text-align:justify;
+    font-size:16px;
+    color:#555;
+}
+
+/*=========================================
+        ACCORDION
+=========================================*/
+
+.accordion{
+    max-width:1000px;
+    margin:auto;
+}
+
+.accordion-item{
+    background:#fff;
+    margin-bottom:18px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+}
+
+.accordion-header{
+    width:100%;
+    padding:22px 30px;
+    border:none;
+    background:#0a2b66;
+    color:#fff;
+    cursor:pointer;
+    font-size:20px;
+    font-weight:600;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    transition:.3s;
+}
+
+.accordion-header:hover{
+    background:#153d88;
+}
+
+.accordion-header span{
+    font-size:28px;
+}
+
+.accordion-content{
+    max-height:0;
+    overflow:hidden;
+    transition:.45s;
+    background:#fff;
+}
+
+.accordion-item.active .accordion-content{
+    max-height:500px;
+}
+
+.accordion-content p,
+.accordion-content ul{
+    padding:25px 35px;
+}
+
+.accordion-content ul{
+    padding-left:55px;
+}
+
+.accordion-content li{
+    margin-bottom:12px;
+}
+
+/*=========================================
+        RESPONSIVE
+=========================================*/
+
+@media(max-width:900px){
+
+.about-grid{
+    grid-template-columns:1fr;
+}
+
+.hero-overlay h1{
+    font-size:34px;
+}
+
+.hero-overlay p{
+    font-size:18px;
+}
+
+.section-title h2{
+    font-size:28px;
+}
+
+}
+
+@media(max-width:600px){
+
+section{
+    padding:60px 20px;
+}
+
+.hero-overlay h1{
+    font-size:28px;
+}
+
+.hero-overlay p{
+    font-size:16px;
+}
+
+.accordion-header{
+    font-size:17px;
+    padding:18px 20px;
+}
+
+.about-box{
+    padding:25px;
+}
+
+}
+/*=========================================
+        COMMITTEE SECTION
+=========================================*/
+
+.committee-section{
+    background:#ffffff;
+}
+
+.table-responsive{
+    overflow-x:auto;
+    margin-top:30px;
+}
+
+.committee-table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.committee-table thead{
+    background:#0a2b66;
+    color:#fff;
+}
+
+.committee-table th{
+    padding:18px;
+    text-align:left;
+    font-size:16px;
+    letter-spacing:.5px;
+}
+
+.committee-table td{
+    padding:18px;
+    border-bottom:1px solid #e5e5e5;
+    font-size:15px;
+    color:#555;
+}
+
+.committee-table tbody tr{
+    transition:.3s;
+}
+
+.committee-table tbody tr:nth-child(even){
+    background:#f8f9fc;
+}
+
+.committee-table tbody tr:hover{
+    background:#eef4ff;
+    transform:scale(1.01);
+}
+
+.committee-table td:first-child,
+.committee-table th:first-child{
+    width:80px;
+    text-align:center;
+    font-weight:600;
+}
+
+.committee-table td:last-child{
+    color:#0a2b66;
+    font-weight:600;
+}
+
+/*=========================================
+        REPORT SECTION
+=========================================*/
+
+.report-section{
+    background:#f8f9fc;
+}
+
+.pdf-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.two-column{
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+}
+
+.pdf-card{
+    background:#fff;
+    border-radius:12px;
+    padding:30px 25px;
+    text-align:center;
+    text-decoration:none;
+    color:#333;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.35s;
+    border-top:5px solid #d62828;
+}
+
+.pdf-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.pdf-card i{
+    font-size:55px;
+    color:#d62828;
+    margin-bottom:18px;
+}
+
+.pdf-card span{
+    display:block;
+    font-size:18px;
+    font-weight:600;
+    color:#0a2b66;
+}
+
+/*=========================================
+        FOOTER
+=========================================*/
+
+.iqac-footer{
+    background:#0a2b66;
+    color:#fff;
+    text-align:center;
+    padding:25px;
+    margin-top:60px;
+}
+
+.iqac-footer p{
+    font-size:15px;
+    letter-spacing:.5px;
+}
+
+/*=========================================
+        SCROLLBAR
+=========================================*/
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#ececec;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#0a2b66;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#153d88;
+}
+
+/*=========================================
+        ANIMATIONS
+=========================================*/
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+.iqac-about,
+.accordion-section,
+.committee-section,
+.report-section{
+    animation:fadeUp .8s ease;
+}
+
+/*=========================================
+        MOBILE RESPONSIVE
+=========================================*/
+
+@media(max-width:768px){
+
+.committee-table{
+    min-width:700px;
+}
+
+.pdf-grid{
+    grid-template-columns:1fr;
+}
+
+.pdf-card{
+    padding:25px;
+}
+
+.pdf-card i{
+    font-size:45px;
+}
+
+.pdf-card span{
+    font-size:16px;
+}
+
+.iqac-footer{
+    padding:20px;
+}
+
+}
+
+@media(max-width:480px){
+
+.section-title h2{
+    font-size:24px;
+}
+
+.committee-table th,
+.committee-table td{
+    padding:14px;
+    font-size:14px;
+}
+
+.pdf-card{
+    padding:22px;
+}
+
+.pdf-card span{
+    font-size:15px;
+}
+
+.iqac-footer p{
+    font-size:14px;
+}
+
+}

@@ -1,0 +1,341 @@
+/*=========================================
+  GOOGLE FONT
+=========================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#222;
+}
+
+/*=========================================
+  SECTION
+=========================================*/
+
+.facilities{
+    width:90%;
+    max-width:1400px;
+    margin:70px auto;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.title h4{
+    color:#c89b2b;
+    font-size:22px;
+    font-weight:600;
+    letter-spacing:1px;
+    margin-bottom:12px;
+}
+
+.title h1{
+    font-size:48px;
+    color:#071B3A;
+    font-weight:800;
+    margin-bottom:15px;
+}
+
+.title p{
+    max-width:760px;
+    margin:auto;
+    font-size:17px;
+    line-height:30px;
+    color:#666;
+}
+
+/*=========================================
+  GRID
+=========================================*/
+
+.facility-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+    gap:35px;
+}
+
+/*=========================================
+  CARD
+=========================================*/
+
+.facility-card{
+    background:#fff;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+    transition:.4s;
+    position:relative;
+}
+
+.facility-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+}
+
+/*=========================================
+  IMAGE
+=========================================*/
+
+.image{
+    position:relative;
+    overflow:hidden;
+}
+
+.image img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    transition:.6s;
+}
+
+.facility-card:hover img{
+    transform:scale(1.08);
+}
+
+/*=========================================
+  BADGE
+=========================================*/
+
+.badge{
+    position:absolute;
+    top:18px;
+    left:18px;
+    background:#d4af37;
+    color:#071B3A;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:700;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+/*=========================================
+  CONTENT
+=========================================*/
+
+.content{
+    padding:28px;
+}
+
+.content h2{
+    font-size:28px;
+    color:#071B3A;
+    margin-bottom:18px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.content h2 i{
+    color:#d4af37;
+    font-size:24px;
+}
+
+.content p{
+    color:#666;
+    line-height:30px;
+    font-size:16px;
+    margin-bottom:25px;
+}
+/*=========================================
+  BOTTOM INFO
+=========================================*/
+
+.bottom{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:12px;
+    border-top:1px solid #ececec;
+    padding-top:18px;
+}
+
+.bottom span{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:#555;
+    font-size:14px;
+    font-weight:600;
+}
+
+.bottom span i{
+    width:34px;
+    height:34px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#f7f7f7;
+    color:#c89b2b;
+    border-radius:50%;
+    transition:.35s;
+}
+
+.facility-card:hover .bottom span i{
+    background:#d4af37;
+    color:#071B3A;
+}
+
+/*=========================================
+  HOVER BORDER EFFECT
+=========================================*/
+
+.facility-card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:5px;
+    background:#d4af37;
+    transform:scaleX(0);
+    transform-origin:left;
+    transition:.4s;
+}
+
+.facility-card:hover::before{
+    transform:scaleX(1);
+}
+
+/*=========================================
+  SCROLL ANIMATION
+=========================================*/
+
+.facility-card{
+    animation:fadeUp .8s ease both;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/*=========================================
+  RESPONSIVE TABLET
+=========================================*/
+
+@media(max-width:992px){
+
+    .title h1{
+        font-size:40px;
+    }
+
+    .facility-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:28px;
+    }
+
+}
+
+/*=========================================
+  RESPONSIVE MOBILE
+=========================================*/
+
+@media(max-width:768px){
+
+    .facilities{
+        width:94%;
+    }
+
+    .title h1{
+        font-size:34px;
+    }
+
+    .title h4{
+        font-size:20px;
+    }
+
+    .title p{
+        font-size:15px;
+        line-height:28px;
+    }
+
+    .facility-grid{
+        grid-template-columns:1fr;
+    }
+
+    .image img{
+        height:230px;
+    }
+
+    .content{
+        padding:22px;
+    }
+
+    .content h2{
+        font-size:24px;
+    }
+
+    .content p{
+        font-size:15px;
+        line-height:28px;
+    }
+
+    .bottom{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+}
+
+/*=========================================
+  EXTRA PREMIUM EFFECTS
+=========================================*/
+
+.facility-card{
+    border:1px solid rgba(212,175,55,.15);
+}
+
+.facility-card:hover{
+    border-color:#d4af37;
+}
+
+.badge{
+    letter-spacing:.5px;
+    text-transform:uppercase;
+}
+
+.content h2{
+    transition:.35s;
+}
+
+.facility-card:hover .content h2{
+    color:#c89b2b;
+}
+
+.facility-card:hover .badge{
+    transform:scale(1.05);
+}
+
+.image::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:80px;
+    background:linear-gradient(to top,
+    rgba(0,0,0,.28),
+    transparent);
+    pointer-events:none;
+}

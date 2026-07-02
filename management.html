@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Management | Shaasha College</title>
+<link rel="stylesheet" href="management.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+
+<div class="management-container">
+
+    <h1>Our Management</h1>
+
+    <!-- Person 1 -->
+    <div class="management-card">
+
+        <div class="image-section">
+            <img src="images/chairperson.jpeg" alt="Chairperson">
+        </div>
+
+        <div class="content-section">
+            <h2>Dr. Shaasha Shetty </h2>
+            <h3>Chairperson & Managing Trustee</h3>
+
+            <p>
+                Dr. Shaasha Shetty  is a visionary educational leader committed
+                to transforming higher education through innovation,
+                excellence and student-centered learning. Her leadership
+                has played a key role in establishing Shaasha College as
+                a center of academic excellence.
+            </p>
+
+            <a href="#">Read More</a>
+        </div>
+
+    </div>
+
+    <!-- Person 2 -->
+    <div class="management-card">
+
+        <div class="image-section">
+            <img src="images/trustee.jpeg" alt="Trustee">
+        </div>
+
+        <div class="content-section">
+            <h2>Mr. Venkatesh Yadav Vatti</h2>
+            <h3>Trustee</h3>
+
+            <p>
+                Mr. Venkatesh Yadav Vatti brings extensive expertise in business
+                management and institutional development. His strategic
+                vision contributes significantly to the growth and
+                modernization of Shaasha College.
+            </p>
+
+            <a href="#">Read More</a>
+        </div>
+
+    </div>
+
+    <!-- Person 3 -->
+    <div class="management-card">
+
+        <div class="image-section">
+            <img src="images/CEO.jpeg" alt="CEO">
+        </div>
+
+        <div class="content-section">
+            <h2>Dr. Shankara Narayana Medisetti</h2>
+            <h3>CEO</h3>
+
+            <p>
+                Dr. Shankara Narayana Medisetti  has over 20 years of academic and
+                administrative experience. He is dedicated to fostering
+                innovation, research, and holistic student development.
+            </p>
+
+            <a href="#">Read More</a>
+        </div>
+
+    </div>
+
+</div>
+<script>
+fetch("header.html")
+.then(response => response.text())
+.then(data => {
+    document.getElementById("header").innerHTML = data;
+});
+</script>
+<div id="footer"></div>
+<script src="include.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

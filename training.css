@@ -1,0 +1,179 @@
+.training-section{
+    padding:80px 8%;
+    background:#f5f5f5;
+}
+
+.training-section h1{
+    text-align:center;
+    font-size:3.5rem;
+    font-weight:300;
+    color:#111;
+}
+
+.line{
+    width:150px;
+    height:4px;
+    background:#f05a4f;
+    margin:15px auto 60px;
+}
+
+.training-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:50px 70px;
+}
+
+.training-card{
+    padding:10px;
+}
+
+.training-card i{
+    font-size:42px;
+    color:#f44336;
+    margin-bottom:20px;
+}
+
+.training-card h3{
+    font-size:2rem;
+    font-weight:400;
+    color:#111;
+    margin-bottom:15px;
+}
+
+.training-card p{
+    color:#333;
+    font-size:1.1rem;
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+.training-card a{
+    color:#111;
+    font-size:1.1rem;
+    text-decoration:underline;
+    transition:0.3s;
+}
+
+.training-card a:hover{
+    color:#f44336;
+}
+
+@media(max-width:992px){
+    .training-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:40px;
+    }
+}
+
+@media(max-width:768px){
+    .training-section{
+        padding:60px 6%;
+    }
+
+    .training-section h1{
+        font-size:2.5rem;
+    }
+
+    .training-grid{
+        grid-template-columns:1fr;
+        gap:35px;
+    }
+
+    .training-card h3{
+        font-size:1.7rem;
+    }
+}
+
+.training-section{
+    padding:80px 8%;
+    background:#f5f5f5;
+}
+
+.training-section h1{
+    text-align:center;
+    font-size:3.5rem;
+    font-weight:300;
+    color:#111;
+}
+
+.line{
+    width:150px;
+    height:4px;
+    background:#f05a4f;
+    margin:15px auto 60px;
+}
+
+.training-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:50px 70px;
+}
+
+.training-card{
+    padding:10px;
+}
+
+.training-card i{
+    font-size:42px;
+    color:#f44336;
+    margin-bottom:20px;
+}
+
+.training-card h3{
+    font-size:2rem;
+    font-weight:400;
+    color:#111;
+    margin-bottom:15px;
+}
+
+.training-card p{
+    color:#333;
+    font-size:1.1rem;
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+.training-card a{
+    color:#111;
+    font-size:1.1rem;
+    text-decoration:underline;
+    transition:0.3s;
+}
+
+.training-card a:hover{
+    color:#f44336;
+}
+
+/* Tablet */
+
+@media(max-width:992px){
+
+    .training-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:40px;
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .training-section{
+        padding:60px 6%;
+    }
+
+    .training-section h1{
+        font-size:2.5rem;
+    }
+
+    .training-grid{
+        grid-template-columns:1fr;
+        gap:35px;
+    }
+
+    .training-card h3{
+        font-size:1.7rem;
+    }
+
+}

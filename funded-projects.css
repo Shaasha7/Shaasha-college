@@ -1,0 +1,166 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#fff;
+    color:#222;
+}
+
+/*----------------------*/
+
+.funded-projects{
+
+    width:92%;
+    max-width:1400px;
+
+    margin:auto;
+
+    padding:60px 0;
+
+    text-align:center;
+
+}
+
+.funded-projects h1{
+
+    font-size:52px;
+    font-weight:300;
+
+}
+
+.line{
+
+    width:150px;
+    height:4px;
+
+    background:#ef5350;
+
+    margin:10px auto 55px;
+
+}
+
+/*----------------------*/
+
+.table-container{
+
+    overflow-x:auto;
+
+}
+
+/*----------------------*/
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:#fff;
+
+}
+
+thead th{
+
+    color:#0b2e91;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    padding:18px;
+
+    border:1px solid #d9d9d9;
+
+    border-bottom:2px solid #ef5350;
+
+    background:#fff;
+
+}
+
+tbody td{
+
+    padding:16px;
+
+    border:1px solid #d9d9d9;
+
+    text-align:left;
+
+    vertical-align:top;
+
+    font-size:15px;
+
+    line-height:1.7;
+
+}
+
+tbody tr:hover{
+
+    background:#f7fbff;
+
+}
+
+/* Column Widths */
+
+th:nth-child(1),
+td:nth-child(1){
+
+    width:70px;
+    text-align:center;
+
+}
+
+th:nth-child(2),
+td:nth-child(2){
+
+    width:260px;
+
+}
+
+th:nth-child(3),
+td:nth-child(3){
+
+    width:190px;
+
+}
+
+th:nth-child(4),
+td:nth-child(4){
+
+    width:500px;
+
+}
+
+th:nth-child(5),
+td:nth-child(5){
+
+    width:170px;
+
+    text-align:center;
+
+    white-space:nowrap;
+
+}
+
+/*----------------------*/
+
+@media(max-width:992px){
+
+    .funded-projects h1{
+
+        font-size:38px;
+
+    }
+
+    table{
+
+        min-width:1000px;
+
+    }
+
+}
